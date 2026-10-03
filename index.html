@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My WAD Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>🚀 My WAD Project</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <h2>Welcome to My Web Page</h2>
+            <p>This is my first simple web page using HTML, CSS, and JavaScript</p>
+            <button onclick="showMessage()">Click Me!</button>
+            <p id="message"></p>
+        </section>
+
+        <section id="about">
+            <h2>About Us</h2>
+            <p>We are learning Web Application Development (WAD)! This project demonstrates basic HTML, CSS, and JavaScript concepts.</p>
+        </section>
+
+        <section id="services">
+            <h2>Our Services</h2>
+            <div class="card-container">
+                <div class="card">
+                    <h3>🌐 Web Design</h3>
+                    <p>Beautiful and responsive designs</p>
+                </div>
+                <div class="card">
+                    <h3>💻 Development</h3>
+                    <p>Clean and efficient code</p>
+                </div>
+                <div class="card">
+                    <h3>📱 Responsive</h3>
+                    <p>Works on all devices</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Contact Us</h2>
+            <form onsubmit="handleSubmit(event)">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="msg" placeholder="Your Message" required></textarea>
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 My WAD Project. All rights reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
